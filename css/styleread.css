@@ -1,0 +1,774 @@
+/*--------------------------------------------------------------------- 
+File Name: style.css 
+---------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------- 
+import Fonts 
+---------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700,700i,800,800i&display=swap');
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+@import url(font-awesome.min.css);
+@import url(owl.carousel.min.css);
+
+/*--------------------------------------------------------------------- 
+basic 
+---------------------------------------------------------------------*/
+
+body {
+     color: #172b8f;
+     font-size: 14px;
+     font-family: 'Poppins', sans-serif;
+     line-height: 1.80857;
+     font-weight: normal;
+}
+
+a {
+     color: #1f1f1f;
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+h1{
+     letter-spacing: 0;
+     font-weight: normal;
+     position: relative;
+     padding: 0;
+     font-weight: normal;
+     line-height: normal;
+     color: #111111;
+     margin: 0
+};
+h2{
+     letter-spacing: 0;
+     font-weight: normal;
+     position: relative;
+     padding: 0;
+     font-weight: normal;
+     line-height: normal;
+     color: #111111;
+     margin: 0
+};
+h3{
+     letter-spacing: 0;
+     font-weight: normal;
+     position: relative;
+     padding: 0;
+     font-weight: normal;
+     line-height: normal;
+     color: #111111;
+     margin: 0
+};
+h4{
+     letter-spacing: 0;
+     font-weight: normal;
+     position: relative;
+     padding: 0;
+     font-weight: normal;
+     line-height: normal;
+     color: #111111;
+     margin: 0
+};
+h5{
+     letter-spacing: 0;
+     font-weight: normal;
+     position: relative;
+     padding: 0;
+     font-weight: normal;
+     line-height: normal;
+     color: #111111;
+     margin: 0
+};
+h6 {
+     letter-spacing: 0;
+     font-weight: normal;
+     position: relative;
+     padding: 0;
+     font-weight: normal;
+     line-height: normal;
+     color: #111111;
+     margin: 0
+}
+
+h1 {
+     font-size: 24px
+}
+
+h2 {
+     font-size: 22px
+}
+
+h3 {
+     font-size: 18px
+}
+
+h4 {
+     font-size: 16px
+}
+
+h5 {
+     font-size: 14px
+}
+
+h6 {
+     font-size: 13px
+}
+
+*,
+*::after,
+*::before {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+     color: #212121;
+     text-decoration: none!important;
+     opacity: 1
+}
+
+button:focus {
+     outline: none;
+}
+
+ul,
+li,
+ol {
+     margin: 0px;
+     padding: 0px;
+     list-style: none;
+}
+
+p {
+     margin: 0px;
+     padding: 0;
+     font-weight: 400;
+     font-size: 17px;
+     line-height: 28px;
+}
+
+a {
+     color: #222222;
+     text-decoration: none;
+     outline: none !important;
+}
+
+a,
+.btn {
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+img {
+     max-width: 100%;
+
+     height: auto;
+     border-radius: 40px;
+
+}
+
+:focus {
+     outline: 0;
+}
+
+.btn-custom {
+     margin-top: 20px;
+     background-color: transparent !important;
+     border: 2px solid #ddd;
+     padding: 12px 40px;
+     font-size: 16px;
+}
+
+.lead {
+     font-size: 18px;
+     line-height: 30px;
+     color: #767676;
+     margin: 0;
+     padding: 0;
+}
+
+.form-control:focus {
+     border-color: #ffffff !important;
+     box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
+}
+
+.navbar-form input {
+     border: none !important;
+}
+
+.badge {
+     font-weight: 500;
+}
+
+blockquote {
+     margin: 20px 0 20px;
+     padding: 0px;
+}
+
+button {
+     border: 0;
+     margin: 0;
+     padding: 0;
+     cursor: pointer;
+}
+
+.full {
+     width: 100%;
+     float: left;
+     margin: 0;
+     padding: 0;
+}
+
+.titlepage {
+     padding-bottom: 60px;
+}
+
+.titlepage::before {
+     content: "";
+     position: absolute;
+     border: #fff solid 5px;
+     border-width: 5px;
+     width: 80px;
+     z-index: 999;
+     margin: 0 auto;
+     left: 0;
+     right: 0;
+     top: 55px;
+}
+
+.titlepage h2 {
+     font-size: 50px;
+     font-weight: bold;
+     line-height: 90px;
+     color: #fff;
+}
+
+.read_more {
+     display: inline-block;
+     background: #6dcff6;
+     color: #fff;
+     max-width: 215px;
+     height: 61px;
+     line-height: 61px;
+     width: 100%;
+     font-size: 17px;
+     text-align: center;
+     font-weight: 500;
+     transition: ease-in all 0.5s;
+}
+
+.read_more:hover {
+     background: #0e0b01;
+     color: #fff;
+     transition: ease-in all 0.5s;
+}
+
+.img_responsive {
+     max-width: 100%;
+}
+
+.text_align_center {
+     text-align: center;
+}
+
+.text_align_left {
+     text-align: left;
+}
+
+.text_align_right {
+     text-align: right;
+}
+
+.d_flex {
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+}
+
+.container {
+     max-width: 1170px;
+}
+
+
+
+
+/*--------------------------------------------------------------------- 
+header 
+---------------------------------------------------------------------*/
+html {
+     scroll-behavior: smooth;
+ }
+ 
+
+/*--------------------------------------------------------------------- 
+scrool behaviour
+---------------------------------------------------------------------*/
+
+.header {
+     width: 100%;
+     background: #172b8f;;
+     height: 110px;
+     padding: 19px 25px;
+     position: fixed;
+     z-index: 990;
+     box-shadow: 3px 0 13px rgba(30, 30, 30, 0.90);
+}
+
+
+/*--------------------------------------------------------------------- 
+menu section 
+---------------------------------------------------------------------*/
+
+.navigation.navbar {
+     float: right;
+     padding: 6px;
+     margin-right: px; 
+}
+
+.navigation.navbar-dark .navbar-nav .nav-link {
+     padding: 0px 8px;
+     color: #fff;
+     font-size: 19px;
+     text-shadow: #060404;
+     line-height: 5px;
+     font-weight: 500;
+     align-items: right;
+}
+.navigation.navbar-dark .navbar-nav .nav-link:hover {
+     text-shadow: 0 0 10px #fff, 0 0 20px #0f8339, 0 0 30px #0f8339;
+}
+
+.navigation.navbar-dark .navbar-nav .nav-link:focus,
+.navigation.navbar-dark .navbar-nav .nav-link:hover {
+     color: #fff;
+}
+
+.navigation.navbar-dark .navbar-nav .active>.nav-link,
+.navigation.navbar-dark .navbar-nav .nav-link.active,
+.navigation.navbar-dark .navbar-nav .nav-link.show,
+.navigation.navbar-dark .navbar-nav .show>.nav-link {
+     color: #ffffff;
+}
+
+.di_no {
+     display: none;
+}
+
+ul.email {
+     padding-top: px;
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+     flex-wrap: wrap;
+     background: #172b8f;
+     width: 80px;
+     height: 10px;
+     border-radius: 60px;
+     opacity: 1;
+     font-size: 22px;
+     color: #ffffff;
+}
+
+ul.email:hover {
+     background: #181818;
+     border-radius: 60px;
+     color: #060606;
+     transition: ease-in all 0.3s;
+}    */
+
+ul.email li {
+     padding: 0px 20px;
+}
+
+ul.email li:nth-child(2) {
+     padding-right: 0;
+}
+
+ul.email li a {
+     font-size: 28px;
+     color: #fcf9f9;
+}
+
+ul.email li i {
+     color: #fff;
+     font-size: 20px;
+}
+.button-box {
+     display: inline-block; 
+    border-radius: 60px; 
+     background-color: #172b8f; 
+     padding: 20px 20px; 
+     text-align:center; 
+     line-height: 3%;
+     transition: background-color 0.3s, transform 0.3s; 
+ }
+ .button-box a {
+     text-decoration: none;
+     color: #ffffff; 
+     font-size: 18px;
+ }
+ 
+ .button-box:hover {
+     background-color: #16a43a; 
+     transform: scale(1.05);
+ }
+/**-----------------------------------------------------------------*/
+/*--------------------------------------------------------------------- 
+menu section 
+---------------------------------------------------------------------*/
+
+
+
+ 
+.col-md-2 {
+     display: flex; /* Use flexbox for alignment */
+     justify-content: flex-end; /* Align items to the right */
+     align-items: center; /* Center items vertically */
+     height: 50%; /* Ensure it takes the full height of the parent */
+}
+
+
+.email li {
+     margin: 0; /* Remove margin from list items */
+}
+ 
+.email a {
+     text-decoration: none; /* Remove underline from links */
+     color: #000; /* Set link color */
+     padding: 10px 15px; /* Add padding for better click area */
+     transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/*- - -------------------------------------------------------        ener page css--*/
+
+.inner_page .header {
+    box-shadow: 0 -3px 20px 0px #717171;
+    position: inherit;
+  
+}
+
+.inner_page .about {
+    margin: 90px 0;
+}
+/*- - -------------------------------------------------------        ener page css--*/
+/*- - -------------------------------------------------------        red page css----*/
+/* Basic Reset */
+
+.highlight {
+     background-color: #e9ecef;
+     font-weight: bold;
+ }
+ 
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #333;
+}
+
+/* Container for the layout */
+.container {
+    display: flex;
+    height: 100vh; /* Full height of the viewport */
+}
+
+/* Left Box: Topics */
+.left-box {
+    margin-top: 62px;
+    width: 30%; /* Set width for left box */
+    background-color: #000; /* White background */
+    border-right: 2px solid #050505; /* Right border for separation */
+    padding: 20px; /* Padding around content */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+.left-box h3 {
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+#topics-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    color: #fff;
+}
+
+#topics-list li {
+    padding: 10px; /* Padding inside each list item */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-bottom: 8px; /* Space between list items */
+    background-color: #000; /* Light gray background for items */
+    border-radius: 5px; /* Rounded corners for list items */
+    transition: background-color 0.3s; /* Smooth background change on hover */
+}
+
+/* Hover effect for the text only */
+#topics-list li span {
+    display: inline-block;
+    transition: color 0.3s; /* Smooth color change for text */
+}
+
+#topics-list li:hover span {
+    color: #fff; /* Change text color on hover */
+}
+
+/* Right Box: Content */
+.right-box {
+    margin-top: 62px;
+    width: 70%; /* Set width for right box */
+    padding: 20px; /* Padding around content */
+    background-color: #000; /* White background */
+    border-left: 2px solid #060606; /* Left border for separation */
+    overflow-y: auto; /* Enable vertical scrolling */
+    height: calc(100vh - 62px); /* Full height minus the margin at the top */
+}
+
+.right-box h3 {
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+#content-display {
+    padding: 15px; /* Padding inside content display area */
+    border: 1px solid #000; /* Border around content area */
+    min-height: 200px; /* Minimum height for content area */
+    font-size: 14px; /* Font size */
+    
+    line-height: 1.6; /* Line height for readability */
+    background-color: #000; /* Light background for content */
+    border-radius: 5px; /* Rounded corners for content */
+    transition: max-height 0.3s ease-in-out; /* Smooth transition for content expansion */
+    max-height: 400px; /* Set maximum height for initial compact view */
+    overflow-y: auto; /* Scrollable content */
+}
+/* Hover effect for content inside right box */
+#content-display:hover {
+    color: #fff; /* Change text color to white on hover */
+    background-color: #131212; /* Slightly lighter background on hover */
+}
+/* For better accessibility, smooth scrolling in content display */
+#content-display::-webkit-scrollbar {
+    width: 8px;
+}
+
+#content-display::-webkit-scrollbar-thumb {
+    background-color: #345b38;
+    border-radius: 5px;
+}
+
+#content-display::-webkit-scrollbar-track {
+    background-color: #050505;
+}
+#topics::-webkit-scrollbar {
+     width: 8px;
+     position: left ;
+ }
+ 
+ #topics::-webkit-scrollbar-thumb {
+     background-color: #000;
+     border-radius: 5px;
+ }
+ 
+ #topics::-webkit-scrollbar-track {
+     background-color: #000;
+ }
+#topics-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+#topics-list li {
+    padding: 10px; /* Padding inside each list item */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-bottom: 8px; /* Space between list items */
+    background-color: #000; /* Background color for items */
+    border-radius: 40px; /* Rounded corners for list items */
+    transition: background-color 0.3s; /* Smooth background change on hover */
+}
+
+.topic-title {
+    font-size: 24px; /* Set the font size for the heading */
+    color: #ffcc00; /* Set the font color for the heading */
+    font-weight: bold; /* Make the text bold */
+    margin: 0; /* Remove default margin */
+}
+
+.topic-description {
+    font-size: 16px; /* Set the font size for the paragraph */
+    color: #ffffff; /* Set the font color for the paragraph */
+    margin: 5px 0; /* Add some margin for spacing */
+}
+
+/* Optional: Change background color on hover */
+#topics-list li:hover {
+    background-color: #172b8f; /* Change background color on hover */
+}
+
+
+
+
+
+
+/*- - -------------------------------------------------------        red page css----*/
+
+
+ 
+/** ----------------------------------------------------------------------- footer **/
+
+.footer {
+    background: #28282b;
+    padding-top: 20px 0
+}
+
+.newslatter_form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.ente {
+    color: #000;
+    border: inherit;
+    padding: 0 30px;
+    border-radius: 50px;
+    height: 66px;
+    width: 90%;
+    font-size: 17px;
+}
+
+
+.subs_btn {
+    max-width: 289px;
+    display: inline-block;
+    background: #172b8f;
+    height: 66px;
+    border-radius: 50px;
+    width: 90%;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: ease-in all 0.5s;
+}
+
+.subs_btn:hover {
+    background: #0f8339;
+    border-radius: 50px;
+    color: #ffffff;
+    transition: ease-in all 0.5s;
+}
+
+.Informa h3 {
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 21px;
+    margin-bottom: 15px;
+    margin-top: 26px;
+    text-transform: uppercase;
+}
+
+.Informa li {
+    font-size: 17px;
+    line-height: 37px;
+    color: #ffffff;
+}
+
+.Informa li a:hover {
+    color: #bdbdbe;
+}
+
+.helpful ul li a {
+    color: #fff;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.helpful ul li a:hover {
+    color: #bdbdbe;
+}
+
+ul.social_icon {
+    float: right;
+}
+
+ul.social_icon li {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+ul.social_icon li:last-child {
+    padding-right: 0;
+}
+
+ul.social_icon li a {
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    line-height: 33px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+ul.social_icon li a:hover {
+    color: #bdbdbe;
+    transform: rotate(360deg);
+    transition: ease-in all 0.7s;
+}
+
+.conta ul li a {
+    color: #ffffff;
+}
+
+.conta ul li a i {
+    padding-right: 5px;
+}
+
+.copyright {
+    background: #172b8f;
+    margin-top: 5px;
+    padding: 10px 0px;
+    
+}
+
+.copyright p {
+    color: #bdbdbe;
+    font-weight: 400;
+}
+
+.copyright a {
+    color: #bdbdbe;
+}
+
+.copyright a:hover {
+    color: #fff;
+}
+
+/*- - -------------------------------------------------------        red page css----*/
+
